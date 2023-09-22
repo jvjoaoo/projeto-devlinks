@@ -26,6 +26,7 @@
 }
 body {
   background: var(--bg-fundo) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -147,4 +148,13 @@ ul li a:hover {
   align-items: center;
   padding: 24px;
   font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --bg-fundo: url(./assets/bg-desktop.jpg);
+  }
+  .light__mode {
+    --bg-fundo: url(./assets/bg-desktop-light.jpg);
+  }
 }
